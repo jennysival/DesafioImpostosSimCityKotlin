@@ -25,9 +25,8 @@ fun menuPrincipal(nome: String, profissao: String, vetorSalariosMensais: DoubleA
     println("[6] Sair")
     println("----------------------------------")
     print("Digite o número da opção desejada: ")
-    val opcaoMenu = readln().toInt()
 
-    when(opcaoMenu){
+    when(readln().toInt()){
         1 -> cadastrarDados()
         2 -> mostrarDadosCadastrados(nome, profissao, vetorSalariosMensais)
         3 -> cadastrarSalariosMensais(nome, profissao, vetorSalariosMensais)
